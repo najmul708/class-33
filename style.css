@@ -1,0 +1,159 @@
+body,p,span{
+font-family:'Roboto',sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+	font-family: 'Rubik' sans-serif;
+}
+body .btn-primary{
+	background: #e73a3e !important;
+    border-color: #e73a3e;
+	padding: 10px 40px;
+	font-size: 16px;
+	position: relative;
+	z-index: 1;
+	
+}
+body .btn-primary::after{
+	content: "";
+	position:absolute;
+	left: 0;
+	top: 0;
+	width:0;
+	height: 100%;
+	background: #111;
+	border-color: #111;
+	z-index: -1;
+	transition: .4s;
+
+}
+body .btn-primary:hover::after{
+	width: 100%;
+
+}
+
+/* start */
+.main-header .container-fluid,.slider{
+max-width: 1480px;
+}
+ul.our-menu li a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #111;
+	font-weight: 500;
+}
+ul.our-menu li a:hover{
+	color: rgb(192, 51, 51);
+	
+}
+/* dropdown */
+ul.our-menu li{
+	position: relative;
+}
+ul.our-menu li ul{
+	position: absolute;
+	width: 250px;
+	left: 0;
+	top: 140%;
+	background: #fafafa;
+	list-style: none;
+	padding: 10px;
+	opacity: 0;
+	visibility: hidden;
+	transition:all .5s ease-in-out;
+	box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+}
+ul.our-menu li:hover ul{
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+ul.our-menu li ul li{
+	flex-direction: column;
+	transition:all .5s ease-in-out;
+}
+ul.our-menu li ul li:hover{
+	letter-spacing:.5mm;
+	
+}
+.header-search {
+	width: 50px;
+	font-size: 20px;
+	text-align: center;
+	margin-right: 20px;
+	border-right: 1px solid #ddd;
+}
+.header-col{
+	width: 220px;
+}
+.header-col-icon {
+	font-size: 33px;
+	color: red;
+}
+.header-col-info span{
+	color: #606060;
+}
+.header-col-info a{
+	color: #111;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+/* Slider */
+.slider{
+	background: url(./img/main-banner2.jpg) no-repeat top center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.slider-contant-wrap{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.slider-contant h6{
+	color: #e73a3e;
+}
+.slider-contant h1{
+	font-size: 65px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	font-family: 'Rubik'sans-serif;
+}
+.slider-contant p{
+	font-weight: 400;
+	color: #606060;
+	font-size: 20px;
+}
+.header-social{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.header-social ul{
+	list-style: none;
+	padding-left: 0;
+}
+.header-social ul li span{
+	font-size: 18px;
+	display: inline-block;
+	margin-right: 50px;
+	position: relative;
+}
+.header-social ul li span::after{
+	content: "";
+	height: 1px;
+	width: 35px;
+	top: 51%;
+	position: absolute;
+	background: #111;
+	right: -50px;
+}
+.header-social ul li a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 14px;
+	color: #111;
+	font-size: 20px;
+}
